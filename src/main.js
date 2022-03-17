@@ -1,9 +1,17 @@
+var pre = window.pageYOffset;
 $(window).on("scroll", function() {
     if (window.pageYOffset > 50) {
         $(".nav,.nav img,#back").addClass("act")
     } else {
         $(".nav,.nav img,#back").removeClass("act");
     }
+    var cur = window.pageYOffset;
+    if(pre > cur){
+       $(".nav").css("top","0");
+    }else{
+       $(".nav").css("top","-55px");
+    }
+    pre = cur;
 }).on("load", function() {
     setTimeout(() => {
         $(".loader").hide();
