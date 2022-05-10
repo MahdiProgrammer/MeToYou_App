@@ -11,7 +11,7 @@ if($_SERVER['REQUEST_METHOD']== 'POST')
 	
 	file_put_contents($path,base64_decode(image));
 	
-	each "http://   $path";
+	each "https://github.com/MahdiProgrammer/MeToYou_App/blob/main/$path";
 }
 	
 ?>
