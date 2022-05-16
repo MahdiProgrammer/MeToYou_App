@@ -13,7 +13,7 @@ if($_SERVER['REQUEST_METHOD']== 'POST')
 	
 	
 	
-	echo "https://github.com/MahdiProgrammer/MeToYou_App/$path";
+	echo "https://mahdiprogrammer.github.io/MeToYou_App/$path";
 }else{
 	echo "Error";
 	
