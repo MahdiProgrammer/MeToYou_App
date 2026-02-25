@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — Meteo (Credit Transfer via USSD)</title>
+  <meta name="description" content="Privacy Policy for Meteo — Credit Transfer via USSD. Explains data handling, advertising identifiers, and user controls." />
+  <style>
+    :root{
+      --bg: #0b1020;
+      --card: rgba(255,255,255,.08);
+      --card2: rgba(255,255,255,.06);
+      --border: rgba(255,255,255,.14);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.70);
+      --muted2: rgba(255,255,255,.58);
+      --accent: #7c5cff;
+      --accent2:#22c55e;
+      --warn:#f59e0b;
+      --danger:#fb7185;
+      --shadow: 0 18px 70px rgba(0,0,0,.45);
+      --radius: 18px;
+      --radius2: 14px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg: #f6f7fb;
+        --card: rgba(0,0,0,.04);
+        --card2: rgba(0,0,0,.03);
+        --border: rgba(0,0,0,.10);
+        --text: rgba(0,0,0,.88);
+        --muted: rgba(0,0,0,.64);
+        --muted2: rgba(0,0,0,.54);
+        --shadow: 0 18px 70px rgba(0,0,0,.12);
+      }
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: var(--sans);
+      color: var(--text);
+      background:
+        radial-gradient(1200px 700px at 20% 10%, rgba(124,92,255,.35), transparent 60%),
+        radial-gradient(900px 600px at 80% 20%, rgba(34,197,94,.22), transparent 62%),
+        radial-gradient(900px 700px at 40% 90%, rgba(245,158,11,.18), transparent 60%),
+        var(--bg);
+      line-height: 1.6;
+    }
+
+    a{ color: inherit; text-decoration:none; }
+    a.link{
+      color: var(--text);
+      text-decoration: underline;
+      text-decoration-color: rgba(124,92,255,.6);
+      text-underline-offset: 3px;
+    }
+    a.link:hover{ text-decoration-color: rgba(34,197,94,.7); }
+
+    .wrap{
+      max-width: 1020px;
+      margin: 0 auto;
+      padding: 28px 18px 80px;
+    }
+
+    .hero{
+      margin-top: 14px;
+      padding: 26px 22px;
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.04));
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero:before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background:
+        radial-gradient(500px 200px at 20% 20%, rgba(124,92,255,.28), transparent 70%),
+        radial-gradient(450px 180px at 80% 30%, rgba(34,197,94,.18), transparent 75%);
+      pointer-events:none;
+      filter: blur(0px);
+      opacity: .9;
+    }
+    .hero > *{ position:relative; }
+
+    .title{
+      display:flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 10px;
+      margin: 0 0 6px;
+      letter-spacing: .2px;
+    }
+    .title h1{
+      margin:0;
+      font-size: clamp(24px, 2.6vw, 34px);
+      line-height: 1.15;
+    }
+    .badge{
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      color: var(--muted);
+    }
+    .subtitle{
+      margin: 0;
+      color: var(--muted);
+      max-width: 70ch;
+    }
+    .meta{
+      margin-top: 14px;
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items:center;
+      color: var(--muted2);
+      font-size: 13px;
+    }
+    .pill{
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.05);
+      border-radius: 999px;
+      padding: 6px 10px;
+      display:inline-flex;
+      gap: 8px;
+      align-items:center;
+    }
+    .dot{
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--accent2);
+      box-shadow: 0 0 0 4px rgba(34,197,94,.15);
+    }
+
+    .grid{
+      margin-top: 18px;
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 16px;
+    }
+    @media (max-width: 900px){
+      .grid{ grid-template-columns: 1fr; }
+    }
+
+    .card{
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: 0 10px 50px rgba(0,0,0,.10);
+    }
+    .card h2{
+      margin: 0 0 10px;
+      font-size: 18px;
+      letter-spacing:.2px;
+    }
+    .card p{ margin: 0 0 10px; color: var(--muted); }
+    .card p:last-child{ margin-bottom:0; }
+
+    .toc a{
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      padding: 10px 12px;
+      border-radius: var(--radius2);
+      border: 1px solid transparent;
+      color: var(--muted);
+    }
+    .toc a:hover{
+      background: var(--card2);
+      border-color: var(--border);
+      color: var(--text);
+    }
+    .toc code{
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted2);
+    }
+
+    .section{
+      margin-top: 16px;
+      padding: 22px 18px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.05);
+    }
+    .section h3{
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+    .section p{ margin: 0 0 10px; color: var(--muted); }
+    .section ul{ margin: 10px 0 0 20px; color: var(--muted); }
+    .section li{ margin: 6px 0; }
+    .callout{
+      margin-top: 12px;
+      padding: 12px 12px;
+      border-radius: var(--radius2);
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(124,92,255,.12), rgba(255,255,255,.03));
+      color: var(--muted);
+    }
+    .callout strong{ color: var(--text); }
+
+    table{
+      width:100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      overflow:hidden;
+      border-radius: var(--radius2);
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      margin-top: 12px;
+    }
+    th, td{
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      text-align: left;
+    }
+    th{
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted2);
+      background: rgba(255,255,255,.04);
+    }
+    tr:last-child td{ border-bottom: 0; }
+    td{ color: var(--muted); }
+
+    .k{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.05);
+      color: var(--muted);
+      font-size: 12px;
+      margin-right: 8px;
+      margin-top: 6px;
+    }
+    .k i{
+      width: 8px;
+      height: 8px;
+      border-radius: 99px;
+      display:inline-block;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px rgba(124,92,255,.14);
+    }
+    .k.green i{ background: var(--accent2); box-shadow: 0 0 0 4px rgba(34,197,94,.14); }
+    .k.warn i{ background: var(--warn); box-shadow: 0 0 0 4px rgba(245,158,11,.16); }
+    .k.danger i{ background: var(--danger); box-shadow: 0 0 0 4px rgba(251,113,133,.16); }
+
+    footer{
+      margin-top: 22px;
+      padding: 14px 18px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.04);
+      color: var(--muted2);
+      font-size: 13px;
+    }
+    .small{ font-size: 13px; color: var(--muted2); }
+    .sep{ opacity:.7; padding: 0 8px; }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="hero" id="top">
+      <div class="title">
+        <h1>Privacy Policy</h1>
+        <span class="badge">Meteo — Credit Transfer via USSD</span>
+      </div>
+      <p class="subtitle">
+        This Privacy Policy explains how the Meteo app (“the App”) handles information.
+        The App helps users dial USSD codes for mobile credit transfer and keeps a local history for convenience.
+      </p>
+
+      <div class="meta">
+        <span class="pill"><span class="dot"></span> Last updated: <strong>2026-02-26</strong></span>
+        <span class="pill">Package: <span style="font-family:var(--mono);">noori.mahdi.metoyou</span></span>
+        <span class="pill">Applies to: Android</span>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="card">
+        <h2>Quick summary</h2>
+        <p>
+          <span class="k green"><i></i>We do not run user accounts</span>
+          <span class="k"><i></i>History is stored locally on your device</span>
+          <span class="k warn"><i></i>Ads may use device identifiers</span>
+        </p>
+        <p>
+          The App may show ads using Google AdMob. Ad providers may collect and share
+          <strong>device identifiers</strong> (such as the Advertising ID) and other information for
+          advertising, measurement, and fraud prevention.
+        </p>
+        <div class="callout">
+          <strong>Important:</strong> Even if the App’s main features work without sending your data to our servers,
+          third-party SDKs (such as advertising SDKs) can transmit data off the device.
+        </div>
+      </section>
+
+      <aside class="card toc">
+        <h2>Contents</h2>
+        <a href="#what-we-collect"><span>1) Information we collect</span> <code>#what-we-collect</code></a>
+        <a href="#how-we-use"><span>2) How we use information</span> <code>#how-we-use</code></a>
+        <a href="#sharing"><span>3) Sharing & third parties</span> <code>#sharing</code></a>
+        <a href="#ads"><span>4) Advertising (AdMob)</span> <code>#ads</code></a>
+        <a href="#security"><span>5) Security</span> <code>#security</code></a>
+        <a href="#data-retention"><span>6) Data retention & deletion</span> <code>#data-retention</code></a>
+        <a href="#children"><span>7) Children’s privacy</span> <code>#children</code></a>
+        <a href="#changes"><span>8) Changes to this policy</span> <code>#changes</code></a>
+        <a href="#contact"><span>9) Contact</span> <code>#contact</code></a>
+      </aside>
+    </div>
+
+    <section class="section" id="what-we-collect">
+      <h3>1) Information we collect</h3>
+      <p>
+        The App is designed to work primarily on-device. However, depending on features you use and the SDKs included,
+        some data may be processed.
+      </p>
+
+      <table aria-label="Data categories">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Examples</th>
+            <th>Where it is stored</th>
+            <th>Shared off-device?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Local transaction history</strong></td>
+            <td>Phone numbers entered for credit transfer, timestamps, notes (if any)</td>
+            <td>On your device (local storage)</td>
+            <td><strong>No</strong> (not sent to our servers)</td>
+          </tr>
+          <tr>
+            <td><strong>Device or other IDs</strong></td>
+            <td>Advertising ID / app instance identifiers (used by ads/measurement)</td>
+            <td>Processed by advertising SDKs</td>
+            <td><strong>Yes</strong> (by third parties such as AdMob)</td>
+          </tr>
+          <tr>
+            <td><strong>Diagnostics & performance</strong></td>
+            <td>Basic diagnostics, crash/performance signals (if collected by SDKs)</td>
+            <td>Processed by third-party services (if enabled)</td>
+            <td><strong>May</strong> be shared by those services</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <strong>Note:</strong> The App does <strong>not</strong> ask you to create an account, and we do not maintain a user database on our servers.
+      </div>
+    </section>
+
+    <section class="section" id="how-we-use">
+      <h3>2) How we use information</h3>
+      <p>We use information for the following purposes:</p>
+      <ul>
+        <li><strong>App functionality:</strong> to show your local history and help you repeat a previous USSD transfer quickly.</li>
+        <li><strong>Analytics & measurement:</strong> to understand app performance and ad measurement (handled by advertising SDKs, where applicable).</li>
+        <li><strong>Fraud prevention & security:</strong> advertising SDKs may use signals (including identifiers) to prevent fraud and abuse.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="sharing">
+      <h3>3) Sharing & third parties</h3>
+      <p>
+        We do not sell your personal information. The App may include third-party SDKs (for example, advertising)
+        that collect and share certain data off-device as described below.
+      </p>
+      <ul>
+        <li><strong>Local history data</strong> (including phone numbers you enter) is intended to stay on your device and is not sent to our servers.</li>
+        <li><strong>Advertising/measurement data</strong> may be collected/shared by third parties (e.g., AdMob) for ads, measurement, and fraud prevention.</li>
+      </ul>
+      <p class="small">
+        Third-party services have their own privacy practices. Please review their policies.
+      </p>
+    </section>
+
+    <section class="section" id="ads">
+      <h3>4) Advertising (Google AdMob)</h3>
+      <p>
+        The App may show ads provided by Google AdMob. AdMob and its partners may collect and share data such as:
+        device identifiers (including the Advertising ID), IP address, ad interaction data, and diagnostics to deliver,
+        measure, and improve advertising and to prevent fraud.
+      </p>
+
+      <p>
+        Useful links:
+        <br />
+        • Google Privacy Policy:
+        <a class="link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
+        <br />
+        • How Google uses information from sites or apps that use our services:
+        <a class="link" href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites</a>
+      </p>
+
+      <div class="callout">
+        <strong>Your controls:</strong> You can reset or limit ad personalization from Android settings:
+        <span style="font-family:var(--mono);">Settings → Privacy → Ads</span>
+        (wording may vary by Android version).
+      </div>
+    </section>
+
+    <section class="section" id="security">
+      <h3>5) Security</h3>
+      <p>
+        We take reasonable measures to protect information stored by the App. Local history stays on your device.
+        Data transmitted by third-party SDKs is generally sent using encrypted connections (HTTPS/TLS).
+      </p>
+      <p class="small">
+        No method of transmission or storage is 100% secure. If you suspect a security issue, please contact us.
+      </p>
+    </section>
+
+    <section class="section" id="data-retention">
+      <h3>6) Data retention & deletion</h3>
+      <p>
+        <strong>Local history:</strong> You can delete the App’s local data by clearing app data in Android settings or uninstalling the App.
+        Since we do not operate user accounts or a server-side database for your history, we generally cannot delete data stored only on your device for you.
+      </p>
+      <ul>
+        <li>Delete local history: <span style="font-family:var(--mono);">Settings → Apps → Meteo → Storage → Clear data</span></li>
+        <li>Or uninstall the App to remove local files created by the App (Android behavior may vary).</li>
+      </ul>
+      <div class="callout">
+        <strong>Reminder:</strong> Advertising-related data handled by third parties (such as AdMob) is governed by their policies and controls.
+      </div>
+    </section>
+
+    <section class="section" id="children">
+      <h3>7) Children’s privacy</h3>
+      <p>
+        The App is not intended for children under 13. We do not knowingly collect personal information from children.
+        If you believe a child provided information to the App, please remove the App and clear its data on the device.
+      </p>
+    </section>
+
+    <section class="section" id="changes">
+      <h3>8) Changes to this policy</h3>
+      <p>
+        We may update this Privacy Policy from time to time. We will change the “Last updated” date at the top of this page.
+      </p>
+      <p class="small">
+        If you continue using the App after changes become effective, you agree to the updated policy.
+      </p>
+    </section>
+
+    <section class="section" id="contact">
+      <h3>9) Contact</h3>
+      <p>
+        If you have questions about this Privacy Policy, contact the developer:
+      </p>
+      <ul>
+        <li><strong>Developer:</strong> Sarwari Apps</li>
+        <li><strong>Email:</strong> <span style="font-family:var(--mono);">support@example.com</span></li>
+      </ul>
+      <p class="small">
+        Replace the email above with your real support email (the one used in Play Console).
+      </p>
+      <p><a class="link" href="#top">Back to top ↑</a></p>
+    </section>
+
+    <footer>
+      <div>
+        <strong>Disclaimer:</strong> This page is a template to help you publish a clear policy. You are responsible for ensuring
+        the statements match your actual app behavior, SDKs, and Play Console declarations.
+      </div>
+      <div class="small" style="margin-top:10px;">
+        <span>© <span id="year"></span> Sarwari Apps</span>
+        <span class="sep">•</span>
+        <span>Privacy Policy</span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // purely cosmetic
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
