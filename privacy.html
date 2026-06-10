@@ -119,7 +119,6 @@
     margin: 16px 0;
     font-size: 15px;
   }
-  .placeholder { background: #fef9c3; padding: 1px 6px; border-radius: 5px; font-weight: 600; }
 
   footer {
     text-align: center;
@@ -171,8 +170,7 @@
   <section class="card" id="who">
     <h2><span class="num">2</span> Who we are</h2>
     <p>The App is developed and operated by <strong>Mahdi Noori</strong> (the &ldquo;Developer&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;). For any privacy-related question or request, contact us at:</p>
-    <p style="font-size:16px;">📧 <strong><span class="placeholder">YOUR_CONTACT_EMAIL@example.com</span></strong></p>
-    <p class="muted" style="font-size:14px;">(Replace the highlighted address above with the email you want users and Google to reach you at, then re-upload this file.)</p>
+    <p style="font-size:16px;">📧 <strong><a href="mailto:mahdinoori.developer@gmail.com">mahdinoori.developer@gmail.com</a></strong></p>
   </section>
 
   <section class="card" id="data">
@@ -205,8 +203,11 @@
       <li><strong>Identifiers</strong> such as the <strong>Advertising ID</strong> and push-notification tokens.</li>
     </ul>
 
-    <h3>3.5 Financial records you enter</h3>
-    <p>Transactions, balances, customers, products, and other accounting data you enter are treated as your content. As described in section&nbsp;7, this content is stored <strong>locally on your device</strong>.</p>
+    <h3>3.5 Phone number (premium activation)</h3>
+    <p>When you choose to activate a premium subscription <strong>manually</strong>, the App asks you to enter your <strong>phone number</strong> together with your name and prepares a message that you then choose to send to us through <strong>Telegram</strong> or <strong>WhatsApp</strong> so we can confirm and activate your subscription. Your phone number leaves your device <strong>only when you initiate this contact</strong>, and we use it solely to identify your account and provide premium support. If you do not use the manual activation flow, the App does not transmit your phone number.</p>
+
+    <h3>3.6 Financial records you enter</h3>
+    <p>Transactions, balances, customers (including any contact details such as customer phone numbers you choose to save), products, and other accounting data you enter are treated as your content. As described in section&nbsp;7, this content is stored <strong>locally on your device</strong> and is not transmitted to our servers.</p>
   </section>
 
   <section class="card" id="summary">
@@ -220,6 +221,7 @@
         <tbody>
           <tr><td>Email address</td><td><span class="pill yes">Yes</span></td><td><span class="pill no">No</span></td><td>Account creation, sign-in</td></tr>
           <tr><td>Name</td><td><span class="pill yes">Yes</span></td><td><span class="pill no">No</span></td><td>Account management, app functionality</td></tr>
+          <tr><td>Phone number</td><td><span class="pill yes">Yes</span></td><td><span class="pill no">No</span></td><td>Premium activation &amp; support (manual, user-initiated)</td></tr>
           <tr><td>Device or other IDs (incl. Advertising ID)</td><td><span class="pill yes">Yes</span></td><td><span class="pill yes">Yes</span></td><td>App functionality, analytics, advertising</td></tr>
           <tr><td>App activity / interactions</td><td><span class="pill yes">Yes</span></td><td><span class="pill yes">Yes</span></td><td>Analytics, advertising</td></tr>
           <tr><td>Crash logs &amp; diagnostics</td><td><span class="pill yes">Yes</span></td><td><span class="pill no">No</span></td><td>Stability &amp; performance</td></tr>
@@ -236,6 +238,7 @@
     <ul>
       <li>To <strong>create and authenticate your account</strong> and keep you signed in securely.</li>
       <li>To <strong>provide and operate the App's features</strong>, including premium features tied to your subscription.</li>
+      <li>To <strong>activate and support premium subscriptions</strong>, including manual activation where you contact us with your name and phone number.</li>
       <li>To <strong>secure your account</strong>, bind your session to your device, and help prevent fraud and unauthorized access.</li>
       <li>To <strong>understand and improve</strong> the App through aggregated analytics and crash diagnostics.</li>
       <li>To <strong>send notifications</strong> related to the App where applicable.</li>
@@ -252,6 +255,7 @@
       <li><strong>Google AdMob (Google LLC)</strong> &mdash; in-app advertising. Collects the Advertising ID and interaction data to serve and measure ads. &nbsp;<a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Ad policy</a> · <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses data</a></li>
       <li><strong>Firebase Analytics (Google LLC)</strong> &mdash; usage analytics and diagnostics. &nbsp;<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Policy</a></li>
       <li><strong>OneSignal</strong> &mdash; push-notification delivery; processes a notification token and basic device information. &nbsp;<a href="https://onesignal.com/privacy_policy" target="_blank" rel="noopener">Policy</a></li>
+      <li><strong>Telegram / WhatsApp (third-party messaging apps)</strong> &mdash; when you choose to activate premium <em>manually</em>, the App opens Telegram or WhatsApp so you can send us a message that includes your name and phone number. These apps transmit and process your message under their own privacy policies. &nbsp;<a href="https://telegram.org/privacy" target="_blank" rel="noopener">Telegram</a> · <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener">WhatsApp</a></li>
       <li><strong>Our authentication &amp; subscription server</strong> &mdash; operated for the App to manage logins and premium access; receives the data described in sections 3.1&ndash;3.3.</li>
     </ul>
     <p>We may also disclose information if required by law, regulation, legal process, or to protect the rights, safety, or property of users or the public.</p>
@@ -292,7 +296,7 @@
     <h2><span class="num">11</span> Your rights &amp; account deletion</h2>
     <p>Depending on where you live, you may have the right to access, correct, export, or delete your personal data, and to object to or restrict certain processing.</p>
     <h3>How to delete your account and data</h3>
-    <p>To request deletion of your account and the personal data associated with it, email us at <strong><span class="placeholder">YOUR_CONTACT_EMAIL@example.com</span></strong> with the subject &ldquo;Account Deletion&rdquo; from the email address you used to sign in. We will process your request within 30 days.</p>
+    <p>To request deletion of your account and the personal data associated with it (including your email, name, phone number, device identifier, and subscription status), email us at <strong><a href="mailto:mahdinoori.developer@gmail.com">mahdinoori.developer@gmail.com</a></strong> with the subject &ldquo;Account Deletion&rdquo; from the email address you used to sign in. We will process your request within 30 days.</p>
     <p>You can also remove locally stored data at any time by uninstalling the App from your device.</p>
   </section>
 
@@ -315,7 +319,7 @@
     <h2><span class="num">15</span> Contact us</h2>
     <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, contact:</p>
     <p style="font-size:16px;"><strong>Mahdi Noori</strong><br>
-    📧 <strong><span class="placeholder">mahdinoori.developer@gmail.com</span></strong></p>
+    📧 <strong><a href="mailto:mahdinoori.developer@gmail.com">mahdinoori.developer@gmail.com</a></strong></p>
   </section>
 
   <footer>
