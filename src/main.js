@@ -1,85 +1,73 @@
-var pre = window.pageYOffset;
-$(window).on("scroll", function() {
-    if (window.pageYOffset > 50) {
-        $(".nav,.nav img,#back").addClass("act")
+// Loader
+window.addEventListener('load', function () {
+    setTimeout(function () {
+        document.querySelector('.loader').classList.add('hide');
+    }, 1200);
+    console.clear();
+});
+
+// Navbar scroll behavior
+var lastScroll = 0;
+window.addEventListener('scroll', function () {
+    var currentScroll = window.pageYOffset;
+
+    if (currentScroll > 60) {
+        document.querySelector('.nav').classList.add('scrolled');
+        document.getElementById('back').classList.add('show');
     } else {
-        $(".nav,.nav img,#back").removeClass("act");
+        document.querySelector('.nav').classList.remove('scrolled');
+        document.getElementById('back').classList.remove('show');
     }
-    var cur = window.pageYOffset;
-    if(pre > cur){
-       $(".nav").css("top","0");
-    }else{
-       $(".nav").css("top","-55px");
+
+    if (currentScroll > lastScroll && currentScroll > 200) {
+        document.querySelector('.nav').style.top = '-80px';
+    } else {
+        document.querySelector('.nav').style.top = '0';
     }
-    pre = cur;
-}).on("load", function() {
-    setTimeout(() => {
-        $(".loader").hide();
-    }, 1500)
-    console.clear()
+    lastScroll = currentScroll;
 });
-$("#back").click(() => {
-    $("html,body").animate({
-        scrollTop: 0
-    }, 'slow')
+
+// Back to top
+document.getElementById('back').addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 });
-// smooth scrolling
-$("a").click(function() {
-    $("html,body").animate({
-        scrollTop: $($(this).attr("href")).offset().top
-    }, 'slow')
+
+// Mobile nav toggle
+var navToggle = document.getElementById('navToggle');
+var navMenu = document.getElementById('navMenu');
+
+navToggle.addEventListener('click', function () {
+    navMenu.classList.toggle('open');
 });
-// scrollreval
-const sr = ScrollReveal({
-    distance: '100px'
+
+navMenu.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+        navMenu.classList.remove('open');
+    });
 });
-ScrollReveal().reveal('.header .flex img', {
-    duration: 2000,
-    origin: 'top',
-    reset: true
+
+// Smooth scroll for nav links
+document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+    anchor.addEventListener('click', function (e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
 });
-ScrollReveal().reveal('.header .flex .text', {
-    duration: 2000,
-    origin: 'bottom',
-    reset: true
-});
-ScrollReveal().reveal('.about-section', {
-    duration: 2000,
-    origin: 'bottom',
-    reset: true
-});
-ScrollReveal().reveal('.gallary .img1', {
-    duration: 2000,
-    origin: 'left',
-    reset: true
-});
-ScrollReveal().reveal('.gallary .img2', {
-    duration: 2000,
-    origin: 'bottom',
-    reset: true
-});
-ScrollReveal().reveal('.gallary .img3', {
-    duration: 2000,
-    origin: 'right',
-    reset: true
-});
-ScrollReveal().reveal('.gallary .img4', {
-    duration: 2000,
-    origin: 'left',
-    reset: true
-});
-ScrollReveal().reveal('.gallary .img5', {
-    duration: 2000,
-    origin: 'top',
-    reset: true
-});
-ScrollReveal().reveal('.gallary .img6', {
-    duration: 2000,
-    origin: 'right',
-    reset: true
-});
-ScrollReveal().reveal('.footer .social', {
-    duration: 2000,
-    origin: 'top',
-    reset: true
+
+// Reveal on scroll (Intersection Observer)
+var revealEls = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
+
+var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.12 });
+
+revealEls.forEach(function (el) {
+    observer.observe(el);
 });
