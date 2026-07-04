@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">میتیو</string>
+
+    <string name="settings_title">تنظیمات</string>
+    <string name="security_privacy_title">امنیت و حریم خصوصی</string>
+
+    <string name="package_activation_title">فعال‌سازی بسته‌ها</string>
+    <string name="package_activation_subtitle">مدیریت و فعال‌سازی بسته‌ها</string>
+
+    <string name="companies_title">شرکت‌ها</string>
+    <string name="companies_subtitle">مدیریت شرکت‌های موجود</string>
+
+    <string name="security_privacy_item_title">امنیت و حریم خصوصی</string>
+    <string name="security_privacy_item_subtitle">محافظت از اطلاعات حساس و تاریخچه تراکنش‌ها</string>
+
+    <string name="backup_title">پشتیبان‌گیری</string>
+    <string name="backup_subtitle">تنظیمات پشتیبان‌گیری</string>
+
+    <string name="about_title">درباره ما</string>
+    <string name="about_subtitle">اطلاعات برنامه</string>
+
+    <string name="app_lock_title">قفل کردن اپ</string>
+    <string name="app_lock_subtitle">برای محافظت از بخش‌های حساس برنامه</string>
+
+    <string name="biometric_title">ورود با اثر انگشت</string>
+    <string name="biometric_subtitle">باز کردن قفل با بایومتریک</string>
+
+    <string name="change_pin_title">تغییر PIN</string>
+    <string name="change_pin_subtitle">ویرایش رمز ۴ رقمی</string>
+
+    <string name="auto_lock_title">قفل خودکار</string>
+    <string name="auto_lock_subtitle">زمان‌بندی قفل پس از خروج از صفحه</string>
+    <string name="auto_lock_value_30_seconds">۳۰ ثانیه</string>
+
+    <string name="cd_back">بازگشت</string>
+    <string name="cd_navigation_chevron">رفتن به جزئیات</string>
+
+    <string name="settings_feature_placeholder">بخش «%1$s» در این نسخه آماده نیست.</string>
+    <string name="change_pin_placeholder">امکان تغییر PIN به‌زودی اضافه می‌شود.</string>
+    <string name="auto_lock_placeholder">تنظیم زمان قفل خودکار به‌زودی اضافه می‌شود.</string>
+</resources>

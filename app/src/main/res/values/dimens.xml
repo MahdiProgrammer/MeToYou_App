@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="settings_header_top_inset_base">16dp</dimen>
+    <dimen name="settings_header_bottom_padding">18dp</dimen>
+    <dimen name="settings_header_horizontal_padding">18dp</dimen>
+    <dimen name="settings_header_corner_radius">30dp</dimen>
+    <dimen name="settings_header_back_button_size">40dp</dimen>
+    <dimen name="settings_header_back_icon_size">24dp</dimen>
+    <dimen name="settings_header_title_margin_start">12dp</dimen>
+    <dimen name="settings_header_elevation">2dp</dimen>
+
+    <dimen name="settings_content_horizontal_padding">16dp</dimen>
+    <dimen name="settings_content_top_padding">18dp</dimen>
+    <dimen name="settings_content_bottom_padding">24dp</dimen>
+
+    <dimen name="settings_card_spacing">12dp</dimen>
+    <dimen name="settings_card_corner_radius">18dp</dimen>
+    <dimen name="settings_card_stroke_width">1dp</dimen>
+    <dimen name="settings_card_elevation">0dp</dimen>
+    <dimen name="settings_card_padding_horizontal">16dp</dimen>
+    <dimen name="settings_card_padding_vertical">14dp</dimen>
+    <dimen name="settings_row_min_height">84dp</dimen>
+
+    <dimen name="settings_icon_container_size">40dp</dimen>
+    <dimen name="settings_icon_container_corner_radius">12dp</dimen>
+    <dimen name="settings_icon_size">22dp</dimen>
+
+    <dimen name="settings_text_block_margin_horizontal">12dp</dimen>
+    <dimen name="settings_title_to_subtitle_spacing">4dp</dimen>
+
+    <dimen name="settings_chevron_size">18dp</dimen>
+    <dimen name="settings_value_margin_end">8dp</dimen>
+    <dimen name="settings_value_min_width">64dp</dimen>
+    <dimen name="settings_switch_min_width">52dp</dimen>
+
+    <dimen name="text_size_settings_header">26sp</dimen>
+    <dimen name="text_size_settings_title">18sp</dimen>
+    <dimen name="text_size_settings_subtitle">15sp</dimen>
+    <dimen name="text_size_settings_value">14sp</dimen>
+</resources>

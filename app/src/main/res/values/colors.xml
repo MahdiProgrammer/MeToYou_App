@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="settings_screen_background">#F3F5FA</color>
+    <color name="settings_header_blue">#2F86F7</color>
+    <color name="settings_header_title">#FFFFFFFF</color>
+
+    <color name="settings_card_background">#FFFFFFFF</color>
+    <color name="settings_card_stroke">#E4EAF4</color>
+    <color name="settings_card_highlight_background">#F2F7FF</color>
+    <color name="settings_card_highlight_stroke">#9FC6FF</color>
+
+    <color name="settings_title_text">#1F2A44</color>
+    <color name="settings_subtitle_text">#667389</color>
+    <color name="settings_value_text">#41516B</color>
+
+    <color name="settings_icon_tint">#5C6B83</color>
+    <color name="settings_icon_accent_tint">#2F86F7</color>
+    <color name="settings_icon_container_background">#EEF3FD</color>
+
+    <color name="settings_switch_checked_thumb">#FFFFFFFF</color>
+    <color name="settings_switch_checked_track">#2F86F7</color>
+    <color name="settings_switch_unchecked_thumb">#FFFFFFFF</color>
+    <color name="settings_switch_unchecked_track">#CCD6E8</color>
+
+    <color name="settings_ripple">#14000000</color>
+</resources>
