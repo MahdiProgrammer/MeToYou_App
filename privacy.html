@@ -1,501 +1,331 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Privacy Policy — Meteo (Credit Transfer via USSD)</title>
-  <meta name="description" content="Privacy Policy for Meteo — Credit Transfer via USSD. Explains data handling, advertising identifiers, and user controls." />
-  <style>
-    :root{
-      --bg: #0b1020;
-      --card: rgba(255,255,255,.08);
-      --card2: rgba(255,255,255,.06);
-      --border: rgba(255,255,255,.14);
-      --text: rgba(255,255,255,.92);
-      --muted: rgba(255,255,255,.70);
-      --muted2: rgba(255,255,255,.58);
-      --accent: #7c5cff;
-      --accent2:#22c55e;
-      --warn:#f59e0b;
-      --danger:#fb7185;
-      --shadow: 0 18px 70px rgba(0,0,0,.45);
-      --radius: 18px;
-      --radius2: 14px;
-      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>Privacy Policy — MeToYou</title>
+<meta name="description" content="Privacy Policy for the MeToYou Android application by Mahdi Noori.">
+<style>
+  :root {
+    --bg: #f1f5f9;
+    --card: #ffffff;
+    --text: #1e293b;
+    --muted: #64748b;
+    --accent: #2563eb;
+    --accent-soft: #eff6ff;
+    --border: #e2e8f0;
+    --radius: 16px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 24px 18px 80px; }
 
-    @media (prefers-color-scheme: light){
-      :root{
-        --bg: #f6f7fb;
-        --card: rgba(0,0,0,.04);
-        --card2: rgba(0,0,0,.03);
-        --border: rgba(0,0,0,.10);
-        --text: rgba(0,0,0,.88);
-        --muted: rgba(0,0,0,.64);
-        --muted2: rgba(0,0,0,.54);
-        --shadow: 0 18px 70px rgba(0,0,0,.12);
-      }
-    }
+  header.hero {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: #fff;
+    border-radius: var(--radius);
+    padding: 40px 32px;
+    margin-bottom: 28px;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25);
+  }
+  header.hero h1 { margin: 0 0 6px; font-size: 30px; letter-spacing: -0.5px; }
+  header.hero p { margin: 0; opacity: 0.92; font-size: 15px; }
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
 
-    *{ box-sizing:border-box; }
-    html,body{ height:100%; }
-    body{
-      margin:0;
-      font-family: var(--sans);
-      color: var(--text);
-      background:
-        radial-gradient(1200px 700px at 20% 10%, rgba(124,92,255,.35), transparent 60%),
-        radial-gradient(900px 600px at 80% 20%, rgba(34,197,94,.22), transparent 62%),
-        radial-gradient(900px 700px at 40% 90%, rgba(245,158,11,.18), transparent 60%),
-        var(--bg);
-      line-height: 1.6;
-    }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 26px 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
 
-    a{ color: inherit; text-decoration:none; }
-    a.link{
-      color: var(--text);
-      text-decoration: underline;
-      text-decoration-color: rgba(124,92,255,.6);
-      text-underline-offset: 3px;
-    }
-    a.link:hover{ text-decoration-color: rgba(34,197,94,.7); }
+  h2 {
+    font-size: 21px;
+    margin: 0 0 14px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  h2 .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; height: 30px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: 700;
+    flex: none;
+  }
+  h3 { font-size: 17px; margin: 20px 0 8px; color: var(--text); }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { padding-left: 22px; margin: 10px 0; }
+  li { margin: 6px 0; }
+  strong { color: #0f172a; }
 
-    .wrap{
-      max-width: 1020px;
-      margin: 0 auto;
-      padding: 28px 18px 80px;
-    }
+  .toc { background: var(--accent-soft); border-color: #dbeafe; }
+  .toc ol { margin: 8px 0 0; padding-left: 20px; columns: 2; column-gap: 32px; }
+  .toc li { margin: 5px 0; }
+  @media (max-width: 600px) { .toc ol { columns: 1; } }
 
-    .hero{
-      margin-top: 14px;
-      padding: 26px 22px;
-      border: 1px solid var(--border);
-      background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.04));
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      position: relative;
-      overflow: hidden;
-    }
-    .hero:before{
-      content:"";
-      position:absolute;
-      inset:-2px;
-      background:
-        radial-gradient(500px 200px at 20% 20%, rgba(124,92,255,.28), transparent 70%),
-        radial-gradient(450px 180px at 80% 30%, rgba(34,197,94,.18), transparent 75%);
-      pointer-events:none;
-      filter: blur(0px);
-      opacity: .9;
-    }
-    .hero > *{ position:relative; }
+  .table-scroll { overflow-x: auto; margin: 14px 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14.5px;
+    min-width: 560px;
+  }
+  th, td {
+    text-align: left;
+    padding: 11px 13px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th { background: #f8fafc; color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 12px; letter-spacing: 0.4px; }
+  tr:last-child td { border-bottom: none; }
+  .pill { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 12.5px; font-weight: 600; }
+  .pill.yes { background: #dcfce7; color: #166534; }
+  .pill.no  { background: #f1f5f9; color: #64748b; }
 
-    .title{
-      display:flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      gap: 10px;
-      margin: 0 0 6px;
-      letter-spacing: .2px;
-    }
-    .title h1{
-      margin:0;
-      font-size: clamp(24px, 2.6vw, 34px);
-      line-height: 1.15;
-    }
-    .badge{
-      font-size: 12px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.06);
-      color: var(--muted);
-    }
-    .subtitle{
-      margin: 0;
-      color: var(--muted);
-      max-width: 70ch;
-    }
-    .meta{
-      margin-top: 14px;
-      display:flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items:center;
-      color: var(--muted2);
-      font-size: 13px;
-    }
-    .pill{
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.05);
-      border-radius: 999px;
-      padding: 6px 10px;
-      display:inline-flex;
-      gap: 8px;
-      align-items:center;
-    }
-    .dot{
-      width: 8px;
-      height: 8px;
-      border-radius: 999px;
-      background: var(--accent2);
-      box-shadow: 0 0 0 4px rgba(34,197,94,.15);
-    }
+  .note {
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 16px 0;
+    font-size: 15px;
+  }
 
-    .grid{
-      margin-top: 18px;
-      display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: 16px;
-    }
-    @media (max-width: 900px){
-      .grid{ grid-template-columns: 1fr; }
-    }
-
-    .card{
-      border: 1px solid var(--border);
-      background: var(--card);
-      border-radius: var(--radius);
-      padding: 18px;
-      box-shadow: 0 10px 50px rgba(0,0,0,.10);
-    }
-    .card h2{
-      margin: 0 0 10px;
-      font-size: 18px;
-      letter-spacing:.2px;
-    }
-    .card p{ margin: 0 0 10px; color: var(--muted); }
-    .card p:last-child{ margin-bottom:0; }
-
-    .toc a{
-      display:flex;
-      align-items:center;
-      justify-content: space-between;
-      padding: 10px 12px;
-      border-radius: var(--radius2);
-      border: 1px solid transparent;
-      color: var(--muted);
-    }
-    .toc a:hover{
-      background: var(--card2);
-      border-color: var(--border);
-      color: var(--text);
-    }
-    .toc code{
-      font-family: var(--mono);
-      font-size: 12px;
-      color: var(--muted2);
-    }
-
-    .section{
-      margin-top: 16px;
-      padding: 22px 18px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      background: rgba(255,255,255,.05);
-    }
-    .section h3{
-      margin: 0 0 10px;
-      font-size: 18px;
-    }
-    .section p{ margin: 0 0 10px; color: var(--muted); }
-    .section ul{ margin: 10px 0 0 20px; color: var(--muted); }
-    .section li{ margin: 6px 0; }
-    .callout{
-      margin-top: 12px;
-      padding: 12px 12px;
-      border-radius: var(--radius2);
-      border: 1px solid var(--border);
-      background: linear-gradient(180deg, rgba(124,92,255,.12), rgba(255,255,255,.03));
-      color: var(--muted);
-    }
-    .callout strong{ color: var(--text); }
-
-    table{
-      width:100%;
-      border-collapse: separate;
-      border-spacing: 0;
-      overflow:hidden;
-      border-radius: var(--radius2);
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.04);
-      margin-top: 12px;
-    }
-    th, td{
-      padding: 12px 10px;
-      border-bottom: 1px solid var(--border);
-      vertical-align: top;
-      text-align: left;
-    }
-    th{
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      color: var(--muted2);
-      background: rgba(255,255,255,.04);
-    }
-    tr:last-child td{ border-bottom: 0; }
-    td{ color: var(--muted); }
-
-    .k{
-      display:inline-flex;
-      align-items:center;
-      gap: 8px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.05);
-      color: var(--muted);
-      font-size: 12px;
-      margin-right: 8px;
-      margin-top: 6px;
-    }
-    .k i{
-      width: 8px;
-      height: 8px;
-      border-radius: 99px;
-      display:inline-block;
-      background: var(--accent);
-      box-shadow: 0 0 0 4px rgba(124,92,255,.14);
-    }
-    .k.green i{ background: var(--accent2); box-shadow: 0 0 0 4px rgba(34,197,94,.14); }
-    .k.warn i{ background: var(--warn); box-shadow: 0 0 0 4px rgba(245,158,11,.16); }
-    .k.danger i{ background: var(--danger); box-shadow: 0 0 0 4px rgba(251,113,133,.16); }
-
-    footer{
-      margin-top: 22px;
-      padding: 14px 18px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      background: rgba(255,255,255,.04);
-      color: var(--muted2);
-      font-size: 13px;
-    }
-    .small{ font-size: 13px; color: var(--muted2); }
-    .sep{ opacity:.7; padding: 0 8px; }
-  </style>
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13.5px;
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+</style>
 </head>
-
 <body>
-  <div class="wrap">
-    <header class="hero" id="top">
-      <div class="title">
-        <h1>Privacy Policy</h1>
-        <span class="badge">Meteo — Credit Transfer via USSD</span>
-      </div>
-      <p class="subtitle">
-        This Privacy Policy explains how the Meteo app (“the App”) handles information.
-        The App helps users dial USSD codes for mobile credit transfer and keeps a local history for convenience.
-      </p>
+<div class="wrap">
 
-      <div class="meta">
-        <span class="pill"><span class="dot"></span> Last updated: <strong>2026-02-26</strong></span>
-        <span class="pill">Package: <span style="font-family:var(--mono);">noori.mahdi.metoyou</span></span>
-        <span class="pill">Applies to: Android</span>
-      </div>
-    </header>
+  <header class="hero">
+    <span class="badge">Android Application</span>
+    <h1>Privacy Policy</h1>
+    <p>MeToYou (میتیو) &mdash; personal &amp; business accounting app</p>
+    <p style="margin-top:10px;font-size:14px;">Effective date: <strong>June 10, 2026</strong> &nbsp;·&nbsp; Last updated: <strong>June 10, 2026</strong></p>
+  </header>
 
-    <div class="grid">
-      <section class="card">
-        <h2>Quick summary</h2>
-        <p>
-          <span class="k green"><i></i>We do not run user accounts</span>
-          <span class="k"><i></i>History is stored locally on your device</span>
-          <span class="k warn"><i></i>Ads may use device identifiers</span>
-        </p>
-        <p>
-          The App may show ads using Google AdMob. Ad providers may collect and share
-          <strong>device identifiers</strong> (such as the Advertising ID) and other information for
-          advertising, measurement, and fraud prevention.
-        </p>
-        <div class="callout">
-          <strong>Important:</strong> Even if the App’s main features work without sending your data to our servers,
-          third-party SDKs (such as advertising SDKs) can transmit data off the device.
-        </div>
-      </section>
+  <section class="card toc">
+    <h2 style="margin-bottom:6px;">Contents</h2>
+    <ol>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#who">Who we are</a></li>
+      <li><a href="#data">Data we collect</a></li>
+      <li><a href="#summary">Data summary table</a></li>
+      <li><a href="#use">How we use your data</a></li>
+      <li><a href="#sharing">Sharing &amp; third-party services</a></li>
+      <li><a href="#local">Data stored on your device</a></li>
+      <li><a href="#ads">Advertising &amp; Advertising ID</a></li>
+      <li><a href="#security">Data security</a></li>
+      <li><a href="#retention">Data retention</a></li>
+      <li><a href="#rights">Your rights &amp; account deletion</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#transfers">International transfers</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </section>
 
-      <aside class="card toc">
-        <h2>Contents</h2>
-        <a href="#what-we-collect"><span>1) Information we collect</span> <code>#what-we-collect</code></a>
-        <a href="#how-we-use"><span>2) How we use information</span> <code>#how-we-use</code></a>
-        <a href="#sharing"><span>3) Sharing & third parties</span> <code>#sharing</code></a>
-        <a href="#ads"><span>4) Advertising (AdMob)</span> <code>#ads</code></a>
-        <a href="#security"><span>5) Security</span> <code>#security</code></a>
-        <a href="#data-retention"><span>6) Data retention & deletion</span> <code>#data-retention</code></a>
-        <a href="#children"><span>7) Children’s privacy</span> <code>#children</code></a>
-        <a href="#changes"><span>8) Changes to this policy</span> <code>#changes</code></a>
-        <a href="#contact"><span>9) Contact</span> <code>#contact</code></a>
-      </aside>
-    </div>
+  <section class="card" id="intro">
+    <h2><span class="num">1</span> Introduction</h2>
+    <p>This Privacy Policy explains how the <strong>MeToYou</strong> mobile application (the &ldquo;App&rdquo;, package name <code>noori.mahdi.metoyou</code>) collects, uses, shares, and protects your information. By installing or using the App, you agree to the practices described here.</p>
+    <p>We designed MeToYou to collect only the minimum information needed to provide its features. The App is an accounting and financial-management tool; most of the financial information you enter stays on your own device.</p>
+  </section>
 
-    <section class="section" id="what-we-collect">
-      <h3>1) Information we collect</h3>
-      <p>
-        The App is designed to work primarily on-device. However, depending on features you use and the SDKs included,
-        some data may be processed.
-      </p>
+  <section class="card" id="who">
+    <h2><span class="num">2</span> Who we are</h2>
+    <p>The App is developed and operated by <strong>Mahdi Noori</strong> (the &ldquo;Developer&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;). For any privacy-related question or request, contact us at:</p>
+    <p style="font-size:16px;">📧 <strong><a href="mailto:mahdinoori.developer@gmail.com">mahdinoori.developer@gmail.com</a></strong></p>
+  </section>
 
-      <table aria-label="Data categories">
+  <section class="card" id="data">
+    <h2><span class="num">3</span> Data we collect</h2>
+
+    <h3>3.1 Account &amp; sign-in information</h3>
+    <p>To create your account and sign you in, we collect:</p>
+    <ul>
+      <li><strong>Email address</strong> &mdash; entered by you for the email verification-code (OTP) login, or provided by Google when you choose <em>Sign in with Google</em>.</li>
+      <li><strong>Name</strong> &mdash; your name and (optionally) a business name associated with your account. When you sign in with Google, your Google profile name may be used.</li>
+    </ul>
+
+    <h3>3.2 Device information</h3>
+    <p>When you sign in, the App sends the following to our authentication server so we can secure your session and bind it to your device:</p>
+    <ul>
+      <li><strong>Device identifier</strong> &mdash; a stable per-install identifier derived from the Android <code>ANDROID_ID</code> (or a randomly generated value as a fallback).</li>
+      <li><strong>Device model</strong> (manufacturer and model name).</li>
+      <li><strong>Operating-system version</strong> (Android version and SDK level).</li>
+      <li><strong>App version</strong>.</li>
+    </ul>
+
+    <h3>3.3 Subscription &amp; purchase status</h3>
+    <p>If you activate a premium subscription, we store and process your <strong>subscription status, plan name, and expiry date</strong> so the App can unlock premium features and verify your access.</p>
+
+    <h3>3.4 Analytics, diagnostics &amp; push notifications</h3>
+    <p>Through the third-party services listed in section&nbsp;6, we and our providers automatically collect:</p>
+    <ul>
+      <li><strong>Usage &amp; interaction data</strong> (e.g., screens opened, events, approximate session activity).</li>
+      <li><strong>Diagnostic &amp; crash data</strong> (e.g., crash logs and performance information).</li>
+      <li><strong>Identifiers</strong> such as the <strong>Advertising ID</strong> and push-notification tokens.</li>
+    </ul>
+
+    <h3>3.5 Phone number (premium activation)</h3>
+    <p>When you choose to activate a premium subscription <strong>manually</strong>, the App asks you to enter your <strong>phone number</strong> together with your name and prepares a message that you then choose to send to us through <strong>Telegram</strong> or <strong>WhatsApp</strong> so we can confirm and activate your subscription. Your phone number leaves your device <strong>only when you initiate this contact</strong>, and we use it solely to identify your account and provide premium support. If you do not use the manual activation flow, the App does not transmit your phone number.</p>
+
+    <h3>3.6 Financial records you enter</h3>
+    <p>Transactions, balances, customers (including any contact details such as customer phone numbers you choose to save), products, and other accounting data you enter are treated as your content. As described in section&nbsp;7, this content is stored <strong>locally on your device</strong> and is not transmitted to our servers.</p>
+  </section>
+
+  <section class="card" id="summary">
+    <h2><span class="num">4</span> Data summary table</h2>
+    <p class="muted">This table mirrors the categories used in the Google Play Data Safety section.</p>
+    <div class="table-scroll">
+      <table>
         <thead>
-          <tr>
-            <th>Category</th>
-            <th>Examples</th>
-            <th>Where it is stored</th>
-            <th>Shared off-device?</th>
-          </tr>
+          <tr><th>Data type</th><th>Collected</th><th>Shared</th><th>Primary purpose</th></tr>
         </thead>
         <tbody>
-          <tr>
-            <td><strong>Local transaction history</strong></td>
-            <td>Phone numbers entered for credit transfer, timestamps, notes (if any)</td>
-            <td>On your device (local storage)</td>
-            <td><strong>No</strong> (not sent to our servers)</td>
-          </tr>
-          <tr>
-            <td><strong>Device or other IDs</strong></td>
-            <td>Advertising ID / app instance identifiers (used by ads/measurement)</td>
-            <td>Processed by advertising SDKs</td>
-            <td><strong>Yes</strong> (by third parties such as AdMob)</td>
-          </tr>
-          <tr>
-            <td><strong>Diagnostics & performance</strong></td>
-            <td>Basic diagnostics, crash/performance signals (if collected by SDKs)</td>
-            <td>Processed by third-party services (if enabled)</td>
-            <td><strong>May</strong> be shared by those services</td>
-          </tr>
+          <tr><td>Email address</td><td><span class="pill yes">Yes</span></td><td><span class="pill no">No</span></td><td>Account creation, sign-in</td></tr>
+          <tr><td>Name</td><td><span class="pill yes">Yes</span></td><td><span class="pill no">No</span></td><td>Account management, app functionality</td></tr>
+          <tr><td>Phone number</td><td><span class="pill yes">Yes</span></td><td><span class="pill no">No</span></td><td>Premium activation &amp; support (manual, user-initiated)</td></tr>
+          <tr><td>Device or other IDs (incl. Advertising ID)</td><td><span class="pill yes">Yes</span></td><td><span class="pill yes">Yes</span></td><td>App functionality, analytics, advertising</td></tr>
+          <tr><td>App activity / interactions</td><td><span class="pill yes">Yes</span></td><td><span class="pill yes">Yes</span></td><td>Analytics, advertising</td></tr>
+          <tr><td>Crash logs &amp; diagnostics</td><td><span class="pill yes">Yes</span></td><td><span class="pill no">No</span></td><td>Stability &amp; performance</td></tr>
+          <tr><td>Purchase / subscription status</td><td><span class="pill yes">Yes</span></td><td><span class="pill no">No</span></td><td>App functionality (premium access)</td></tr>
+          <tr><td>Financial records you enter</td><td><span class="pill no">Stored on device</span></td><td><span class="pill no">No</span></td><td>Core accounting features</td></tr>
         </tbody>
       </table>
+    </div>
+    <div class="note">All data transmitted between the App and our servers is <strong>encrypted in transit</strong> using HTTPS/TLS.</div>
+  </section>
 
-      <div class="callout">
-        <strong>Note:</strong> The App does <strong>not</strong> ask you to create an account, and we do not maintain a user database on our servers.
-      </div>
-    </section>
+  <section class="card" id="use">
+    <h2><span class="num">5</span> How we use your data</h2>
+    <ul>
+      <li>To <strong>create and authenticate your account</strong> and keep you signed in securely.</li>
+      <li>To <strong>provide and operate the App's features</strong>, including premium features tied to your subscription.</li>
+      <li>To <strong>activate and support premium subscriptions</strong>, including manual activation where you contact us with your name and phone number.</li>
+      <li>To <strong>secure your account</strong>, bind your session to your device, and help prevent fraud and unauthorized access.</li>
+      <li>To <strong>understand and improve</strong> the App through aggregated analytics and crash diagnostics.</li>
+      <li>To <strong>send notifications</strong> related to the App where applicable.</li>
+      <li>To <strong>show advertising</strong> that helps keep the App free (see section&nbsp;8).</li>
+    </ul>
+    <div class="note">We do <strong>not</strong> sell your personal information.</div>
+  </section>
 
-    <section class="section" id="how-we-use">
-      <h3>2) How we use information</h3>
-      <p>We use information for the following purposes:</p>
-      <ul>
-        <li><strong>App functionality:</strong> to show your local history and help you repeat a previous USSD transfer quickly.</li>
-        <li><strong>Analytics & measurement:</strong> to understand app performance and ad measurement (handled by advertising SDKs, where applicable).</li>
-        <li><strong>Fraud prevention & security:</strong> advertising SDKs may use signals (including identifiers) to prevent fraud and abuse.</li>
-      </ul>
-    </section>
+  <section class="card" id="sharing">
+    <h2><span class="num">6</span> Sharing &amp; third-party services</h2>
+    <p>We share data only with the service providers that make the App work. Each operates under its own privacy policy:</p>
+    <ul>
+      <li><strong>Google Sign-In (Google LLC)</strong> &mdash; authentication. When you tap &ldquo;Sign in with Google&rdquo;, Google shares your name, email address, and profile picture with the App after your consent. &nbsp;<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Policy</a></li>
+      <li><strong>Google AdMob (Google LLC)</strong> &mdash; in-app advertising. Collects the Advertising ID and interaction data to serve and measure ads. &nbsp;<a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Ad policy</a> · <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses data</a></li>
+      <li><strong>Firebase Analytics (Google LLC)</strong> &mdash; usage analytics and diagnostics. &nbsp;<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Policy</a></li>
+      <li><strong>OneSignal</strong> &mdash; push-notification delivery; processes a notification token and basic device information. &nbsp;<a href="https://onesignal.com/privacy_policy" target="_blank" rel="noopener">Policy</a></li>
+      <li><strong>Telegram / WhatsApp (third-party messaging apps)</strong> &mdash; when you choose to activate premium <em>manually</em>, the App opens Telegram or WhatsApp so you can send us a message that includes your name and phone number. These apps transmit and process your message under their own privacy policies. &nbsp;<a href="https://telegram.org/privacy" target="_blank" rel="noopener">Telegram</a> · <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener">WhatsApp</a></li>
+      <li><strong>Our authentication &amp; subscription server</strong> &mdash; operated for the App to manage logins and premium access; receives the data described in sections 3.1&ndash;3.3.</li>
+    </ul>
+    <p>We may also disclose information if required by law, regulation, legal process, or to protect the rights, safety, or property of users or the public.</p>
+  </section>
 
-    <section class="section" id="sharing">
-      <h3>3) Sharing & third parties</h3>
-      <p>
-        We do not sell your personal information. The App may include third-party SDKs (for example, advertising)
-        that collect and share certain data off-device as described below.
-      </p>
-      <ul>
-        <li><strong>Local history data</strong> (including phone numbers you enter) is intended to stay on your device and is not sent to our servers.</li>
-        <li><strong>Advertising/measurement data</strong> may be collected/shared by third parties (e.g., AdMob) for ads, measurement, and fraud prevention.</li>
-      </ul>
-      <p class="small">
-        Third-party services have their own privacy practices. Please review their policies.
-      </p>
-    </section>
+  <section class="card" id="local">
+    <h2><span class="num">7</span> Data stored on your device</h2>
+    <p>The financial and accounting records you create in the App are stored <strong>locally on your device</strong>. The authentication token that keeps you signed in is stored locally using Android's encrypted storage.</p>
+    <p>If you use the App's <strong>backup feature</strong>, a backup file is created only when you choose to do so and is saved to the location you select (for example, your device storage). You are responsible for the security of any backup files you export or share.</p>
+    <p>Uninstalling the App removes locally stored data; backup files you have exported are not removed automatically.</p>
+  </section>
 
-    <section class="section" id="ads">
-      <h3>4) Advertising (Google AdMob)</h3>
-      <p>
-        The App may show ads provided by Google AdMob. AdMob and its partners may collect and share data such as:
-        device identifiers (including the Advertising ID), IP address, ad interaction data, and diagnostics to deliver,
-        measure, and improve advertising and to prevent fraud.
-      </p>
+  <section class="card" id="ads">
+    <h2><span class="num">8</span> Advertising &amp; Advertising ID</h2>
+    <p>The App may display ads through Google AdMob. AdMob uses the device <strong>Advertising ID</strong> and interaction data to serve and measure advertising. You can control this:</p>
+    <ul>
+      <li>On your device, open <em>Settings → Google → Ads</em> to reset your Advertising ID or opt out of ad personalization.</li>
+      <li>Learn more about how Google uses data from apps that use its services at <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a>.</li>
+    </ul>
+  </section>
 
-      <p>
-        Useful links:
-        <br />
-        • Google Privacy Policy:
-        <a class="link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
-        <br />
-        • How Google uses information from sites or apps that use our services:
-        <a class="link" href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites</a>
-      </p>
+  <section class="card" id="security">
+    <h2><span class="num">9</span> Data security</h2>
+    <ul>
+      <li>All communication between the App and our servers uses <strong>HTTPS/TLS encryption</strong>.</li>
+      <li>Your local authentication token is stored using <strong>encrypted storage</strong> on the device.</li>
+      <li>Optional <strong>biometric / device lock</strong> can be enabled to protect access to the App.</li>
+    </ul>
+    <p>No method of transmission or storage is 100% secure, but we take reasonable measures to protect your information.</p>
+  </section>
 
-      <div class="callout">
-        <strong>Your controls:</strong> You can reset or limit ad personalization from Android settings:
-        <span style="font-family:var(--mono);">Settings → Privacy → Ads</span>
-        (wording may vary by Android version).
-      </div>
-    </section>
+  <section class="card" id="retention">
+    <h2><span class="num">10</span> Data retention</h2>
+    <p>We keep account data (such as your email, name, device identifier, and subscription status) for as long as your account remains active or as needed to provide the App. When you request deletion (section&nbsp;11), we delete or anonymize your account data, except where we must retain certain records to comply with legal obligations or resolve disputes.</p>
+  </section>
 
-    <section class="section" id="security">
-      <h3>5) Security</h3>
-      <p>
-        We take reasonable measures to protect information stored by the App. Local history stays on your device.
-        Data transmitted by third-party SDKs is generally sent using encrypted connections (HTTPS/TLS).
-      </p>
-      <p class="small">
-        No method of transmission or storage is 100% secure. If you suspect a security issue, please contact us.
-      </p>
-    </section>
+  <section class="card" id="rights">
+    <h2><span class="num">11</span> Your rights &amp; account deletion</h2>
+    <p>Depending on where you live, you may have the right to access, correct, export, or delete your personal data, and to object to or restrict certain processing.</p>
+    <h3>How to delete your account and data</h3>
+    <p>To request deletion of your account and the personal data associated with it (including your email, name, phone number, device identifier, and subscription status), email us at <strong><a href="mailto:mahdinoori.developer@gmail.com">mahdinoori.developer@gmail.com</a></strong> with the subject &ldquo;Account Deletion&rdquo; from the email address you used to sign in. We will process your request within 30 days.</p>
+    <p>You can also remove locally stored data at any time by uninstalling the App from your device.</p>
+  </section>
 
-    <section class="section" id="data-retention">
-      <h3>6) Data retention & deletion</h3>
-      <p>
-        <strong>Local history:</strong> You can delete the App’s local data by clearing app data in Android settings or uninstalling the App.
-        Since we do not operate user accounts or a server-side database for your history, we generally cannot delete data stored only on your device for you.
-      </p>
-      <ul>
-        <li>Delete local history: <span style="font-family:var(--mono);">Settings → Apps → Meteo → Storage → Clear data</span></li>
-        <li>Or uninstall the App to remove local files created by the App (Android behavior may vary).</li>
-      </ul>
-      <div class="callout">
-        <strong>Reminder:</strong> Advertising-related data handled by third parties (such as AdMob) is governed by their policies and controls.
-      </div>
-    </section>
+  <section class="card" id="children">
+    <h2><span class="num">12</span> Children's privacy</h2>
+    <p>The App is not directed to children under the age of 13 (or the minimum age required in your country), and we do not knowingly collect personal data from them. If you believe a child has provided us with personal data, please contact us so we can delete it.</p>
+  </section>
 
-    <section class="section" id="children">
-      <h3>7) Children’s privacy</h3>
-      <p>
-        The App is not intended for children under 13. We do not knowingly collect personal information from children.
-        If you believe a child provided information to the App, please remove the App and clear its data on the device.
-      </p>
-    </section>
+  <section class="card" id="transfers">
+    <h2><span class="num">13</span> International data transfers</h2>
+    <p>Our service providers (such as Google) may process data on servers located in other countries. Where data is transferred internationally, it remains protected by appropriate safeguards and the providers' own compliance programs.</p>
+  </section>
 
-    <section class="section" id="changes">
-      <h3>8) Changes to this policy</h3>
-      <p>
-        We may update this Privacy Policy from time to time. We will change the “Last updated” date at the top of this page.
-      </p>
-      <p class="small">
-        If you continue using the App after changes become effective, you agree to the updated policy.
-      </p>
-    </section>
+  <section class="card" id="changes">
+    <h2><span class="num">14</span> Changes to this policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will revise the &ldquo;Last updated&rdquo; date at the top of this page. Significant changes may also be communicated within the App. Your continued use of the App after an update means you accept the revised policy.</p>
+  </section>
 
-    <section class="section" id="contact">
-      <h3>9) Contact</h3>
-      <p>
-        If you have questions about this Privacy Policy, contact the developer:
-      </p>
-      <ul>
-        <li><strong>Developer:</strong> Mahdi Noori</li>
-        <li><strong>Email:</strong> <span style="font-family:var(--mono);">mahdinoori.developer@gmail.com</span></li>
-      </ul>
-      <p class="small">
-        Replace the email above with your real support email (the one used in Play Console).
-      </p>
-      <p><a class="link" href="#top">Back to top ↑</a></p>
-    </section>
+  <section class="card" id="contact">
+    <h2><span class="num">15</span> Contact us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, contact:</p>
+    <p style="font-size:16px;"><strong>Mahdi Noori</strong><br>
+    📧 <strong><a href="mailto:mahdinoori.developer@gmail.com">mahdinoori.developer@gmail.com</a></strong></p>
+  </section>
 
-    <footer>
-      <div>
-        <strong>Disclaimer:</strong> This page is a template to help you publish a clear policy. You are responsible for ensuring
-        the statements match your actual app behavior, SDKs, and Play Console declarations.
-      </div>
-      <div class="small" style="margin-top:10px;">
-        <span>© <span id="year"></span>Mahdi Noori</span>
-        <span class="sep">•</span>
-        <span>Privacy Policy</span>
-      </div>
-    </footer>
-  </div>
+  <footer>
+    &copy; 2026 Mahdi Noori · MeToYou. All rights reserved.
+  </footer>
 
-  <script>
-    // purely cosmetic
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+</div>
 </body>
 </html>
