@@ -1,0 +1,26 @@
+{
+  "name": "میتیو | ارسال کریدیت موبایل",
+  "short_name": "میتیو",
+  "description": "اپلیکیشن ارسال کریدیت موبایل و فعال‌سازی بسته برای فروشندگان در افغانستان",
+  "start_url": "/MeToYou_App/",
+  "scope": "/MeToYou_App/",
+  "display": "standalone",
+  "background_color": "#1976D2",
+  "theme_color": "#1976D2",
+  "lang": "fa",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "src/img/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "src/img/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
