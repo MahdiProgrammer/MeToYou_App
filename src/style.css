@@ -1052,6 +1052,23 @@ body {
     box-shadow: 0 8px 20px var(--shadow);
 }
 
+.contact-phone {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 15px;
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+.contact-phone a {
+    color: var(--blue2);
+    font-weight: 700;
+}
+
+.contact-phone a:hover {
+    color: var(--blue-dark);
+}
+
 /* ===== Footer ===== */
 .footer {
     background: var(--blue-dark);
