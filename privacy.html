@@ -1,331 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="index, follow">
-<title>Privacy Policy — MeToYou</title>
-<meta name="description" content="Privacy Policy for the MeToYou Android application by Mahdi Noori.">
-<style>
-  :root {
-    --bg: #f1f5f9;
-    --card: #ffffff;
-    --text: #1e293b;
-    --muted: #64748b;
-    --accent: #2563eb;
-    --accent-soft: #eff6ff;
-    --border: #e2e8f0;
-    --radius: 16px;
-  }
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.7;
-    font-size: 16px;
-  }
-  .wrap { max-width: 860px; margin: 0 auto; padding: 24px 18px 80px; }
-
-  header.hero {
-    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-    color: #fff;
-    border-radius: var(--radius);
-    padding: 40px 32px;
-    margin-bottom: 28px;
-    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25);
-  }
-  header.hero h1 { margin: 0 0 6px; font-size: 30px; letter-spacing: -0.5px; }
-  header.hero p { margin: 0; opacity: 0.92; font-size: 15px; }
-  .badge {
-    display: inline-block;
-    background: rgba(255,255,255,0.18);
-    border: 1px solid rgba(255,255,255,0.3);
-    padding: 4px 12px;
-    border-radius: 999px;
-    font-size: 13px;
-    margin-bottom: 16px;
-  }
-
-  .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 26px 30px;
-    margin-bottom: 20px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-  }
-
-  h2 {
-    font-size: 21px;
-    margin: 0 0 14px;
-    color: var(--text);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  h2 .num {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px; height: 30px;
-    background: var(--accent-soft);
-    color: var(--accent);
-    border-radius: 9px;
-    font-size: 15px;
-    font-weight: 700;
-    flex: none;
-  }
-  h3 { font-size: 17px; margin: 20px 0 8px; color: var(--text); }
-  p, li { color: var(--text); }
-  .muted { color: var(--muted); }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  ul { padding-left: 22px; margin: 10px 0; }
-  li { margin: 6px 0; }
-  strong { color: #0f172a; }
-
-  .toc { background: var(--accent-soft); border-color: #dbeafe; }
-  .toc ol { margin: 8px 0 0; padding-left: 20px; columns: 2; column-gap: 32px; }
-  .toc li { margin: 5px 0; }
-  @media (max-width: 600px) { .toc ol { columns: 1; } }
-
-  .table-scroll { overflow-x: auto; margin: 14px 0; }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 14.5px;
-    min-width: 560px;
-  }
-  th, td {
-    text-align: left;
-    padding: 11px 13px;
-    border-bottom: 1px solid var(--border);
-    vertical-align: top;
-  }
-  th { background: #f8fafc; color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 12px; letter-spacing: 0.4px; }
-  tr:last-child td { border-bottom: none; }
-  .pill { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 12.5px; font-weight: 600; }
-  .pill.yes { background: #dcfce7; color: #166534; }
-  .pill.no  { background: #f1f5f9; color: #64748b; }
-
-  .note {
-    background: var(--accent-soft);
-    border-left: 4px solid var(--accent);
-    border-radius: 10px;
-    padding: 14px 18px;
-    margin: 16px 0;
-    font-size: 15px;
-  }
-
-  footer {
-    text-align: center;
-    color: var(--muted);
-    font-size: 13.5px;
-    margin-top: 36px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border);
-  }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d1d43">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="MeToYou privacy policy: how the Android credit-transfer and record-keeping app uses account, device and locally stored data, and how to request deletion.">
+  <title>Privacy Policy · MeToYou</title>
+  <style>
+    :root{color-scheme:light;--navy:#101f43;--text:#192944;--muted:#596b85;--accent:#365cf6;--accent-deep:#2346d3;--line:#e3e9f3;--background:#f6f8fd;--surface:#fff;--rounded:22px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse 740px 440px at 5% -140px,#dce6ff,transparent),var(--background);color:var(--text);font:15.5px/1.8 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:var(--accent-deep);text-underline-offset:3px}a:hover{color:#102c98}a:focus-visible{outline:3px solid #f1b84a;outline-offset:4px;border-radius:4px}
+    .container{width:min(1150px,calc(100% - 40px));margin-inline:auto}
+    .top{padding:21px 0;display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .brand{display:inline-flex;gap:11px;align-items:center;color:var(--navy);font-weight:760;text-decoration:none;letter-spacing:-.02em}
+    .brand-mark{display:inline-grid;place-items:center;width:37px;height:37px;background:var(--accent);border-radius:12px;color:white;box-shadow:0 7px 19px #365cf62e;font-size:21px;font-weight:800}
+    .top nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap;font-size:.91rem}.top nav a{color:#435773;text-decoration:none;font-weight:640}
+    .top nav a[aria-current]{color:var(--accent-deep)}
+    .hero{color:white;background:radial-gradient(circle at 88% 0%,#486ac2 0,transparent 39%),radial-gradient(circle at 10% 100%,#223a7a 0,transparent 39%),linear-gradient(115deg,#0f1e40 0%,#192e60 100%);border-radius:30px;padding:clamp(30px,6vw,65px);box-shadow:0 25px 55px #0c245125;position:relative;overflow:hidden}
+    .hero:after{content:"";position:absolute;width:250px;height:250px;right:-90px;bottom:-160px;border:45px solid #ffffff08;border-radius:50%;pointer-events:none}
+    .eyebrow{font-size:.77rem;letter-spacing:.11em;text-transform:uppercase;display:inline-block;padding:4px 13px;border:1px solid #ffffff55;border-radius:30px;background:#ffffff12}
+    h1{font-size:clamp(2.25rem,6vw,3.7rem);line-height:1.12;letter-spacing:-.055em;margin:21px 0 14px;font-weight:800}
+    .hero p{max-width:65ch;color:#e1eafd;margin:0 0 18px}.hero .meta{color:#baccf0;font-size:.86rem}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}.chip{background:#ffffff15;border:1px solid #ffffff27;border-radius:40px;padding:7px 12px;font-size:.79rem;font-weight:610}
+    .layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:23px;align-items:start;padding:30px 0 46px}
+    .sidebar{position:sticky;top:22px;background:var(--surface);border:1px solid var(--line);border-radius:var(--rounded);padding:22px;box-shadow:0 4px 26px #102f6209}
+    .sidebar h2{font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+    .sidebar ul{list-style:none;padding:0;margin:0}.sidebar li+li{margin-top:2px}.sidebar a{display:block;text-decoration:none;color:#4a5e7b;padding:8px 9px;border-radius:10px;font-size:.865rem;line-height:1.45}
+    .sidebar a:hover,.sidebar a:focus-visible{background:#eff3ff;color:#284cda}
+    .content{min-width:0}.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--rounded);padding:clamp(23px,4vw,37px);margin-bottom:20px;box-shadow:0 6px 26px #122d5b09;scroll-margin-top:25px}
+    .card h2{font-size:1.36rem;letter-spacing:-.028em;line-height:1.35;display:flex;align-items:center;gap:13px;margin:0 0 18px;color:var(--navy)}
+    .num{display:grid;place-items:center;flex:none;width:34px;height:34px;border-radius:11px;background:#eef2ff;color:#3558e2;font-size:.8rem;font-weight:760;font-variant-numeric:tabular-nums}
+    .card h3{font-size:1.01rem;line-height:1.45;margin:22px 0 8px}.card p{margin:0 0 15px}.card p:last-child{margin:0}
+    .card ul,.card ol{padding-left:22px;margin:9px 0 17px}.card li+li{margin-top:8px}strong{color:#192a47}
+    .muted{color:var(--muted)}.note{background:#f0f4ff;border-left:4px solid #5775f2;border-radius:10px;padding:14px 16px;margin-top:19px}
+    .note strong{color:#183468}.warning{background:#fff9ed;border-left-color:#e3a63c}
+    .data-table{overflow-x:auto;border:1px solid var(--line);border-radius:14px;margin:17px 0}
+    table{border-collapse:collapse;width:100%;min-width:540px;font-size:.86rem;line-height:1.6;text-align:left}
+    th,td{padding:13px 15px;border-bottom:1px solid #e7edf6;vertical-align:top}
+    th{background:#f2f6ff;font-size:.77rem;color:#465a78;letter-spacing:.018em}
+    tr:last-child td{border-bottom:0}
+    .cta{display:inline-flex;align-items:center;justify-content:center;gap:7px;text-decoration:none;padding:11px 16px;border-radius:12px;background:var(--accent);color:white;font-weight:730;font-size:.9rem;box-shadow:0 7px 22px #365cf623}
+    .cta:hover{background:var(--accent-deep);color:white;text-decoration:none}
+    .locale-summary{direction:rtl;text-align:right;font-family:Tahoma,"Segoe UI",Arial,sans-serif;background:linear-gradient(125deg,#fff 20%,#f6f8ff 100%)}
+    .locale-summary h2{justify-content:flex-start}.locale-summary ul{padding-right:24px;padding-left:0}
+    footer{padding:0 0 36px;display:flex;gap:14px;justify-content:space-between;flex-wrap:wrap;color:var(--muted);font-size:.86rem}
+    @media(max-width:900px){.layout{grid-template-columns:1fr}.sidebar{position:static}.sidebar ul{columns:2;column-gap:12px}.sidebar li{break-inside:avoid}}
+    @media(max-width:560px){.container{width:min(100% - 28px,1150px)}.top{flex-direction:column;align-items:flex-start;gap:10px}.top nav{gap:14px}.hero{border-radius:22px}.sidebar ul{columns:1}.card{border-radius:17px}.card h2{font-size:1.2rem}}
+    @media(prefers-reduced-motion:no-preference){.cta{transition:transform .18s,background .18s}.cta:hover{transform:translateY(-1px)}}
+    @media print{body{background:#fff}.hero{box-shadow:none;color:#000;background:#fff;border:1px solid #ddd}.hero p,.hero .meta{color:#333}.chips,.top nav,.sidebar{display:none}.layout{display:block}.card{box-shadow:none;break-inside:avoid}a{color:#111}}
+  </style>
 </head>
 <body>
-<div class="wrap">
+  <div class="container">
+    <header class="top">
+      <a class="brand" href="index.html" aria-label="MeToYou homepage"><span class="brand-mark" aria-hidden="true">M</span> MeToYou <span class="muted" style="font-size:.8rem;font-weight:500">/ Legal</span></a>
+      <nav aria-label="Legal navigation"><a href="index.html">Home</a><a href="privacy.html" aria-current="page">Privacy policy</a><a href="delete-account.html">Delete account</a></nav>
+    </header>
+    <section class="hero" aria-labelledby="page-title">
+      <span class="eyebrow">Privacy &amp; transparency</span>
+      <h1 id="page-title">Your data.<br>Your choices.</h1>
+      <p>This policy explains what the MeToYou Android app handles, what stays on your phone, which services may receive data, and how you can request account deletion.</p>
+      <div class="meta">Privacy Policy · Effective June 10, 2026 · Last updated October 20, 2026</div>
+      <div class="chips" aria-label="Key privacy topics"><span class="chip">USSD credit transfers</span><span class="chip">Local records</span><span class="chip">Optional premium account</span></div>
+    </section>
 
-  <header class="hero">
-    <span class="badge">Android Application</span>
-    <h1>Privacy Policy</h1>
-    <p>MeToYou (میتیو) &mdash; personal &amp; business accounting app</p>
-    <p style="margin-top:10px;font-size:14px;">Effective date: <strong>June 10, 2026</strong> &nbsp;·&nbsp; Last updated: <strong>June 10, 2026</strong></p>
-  </header>
+    <div class="layout">
+      <nav class="sidebar" aria-label="Privacy policy contents">
+        <h2>On this page</h2>
+        <ul>
+          <li><a href="#overview">01 · Overview</a></li>
+          <li><a href="#collect">02 · Data you provide</a></li>
+          <li><a href="#technical">03 · Technical information</a></li>
+          <li><a href="#permissions">04 · Phone permissions &amp; USSD</a></li>
+          <li><a href="#summary">05 · Data overview</a></li>
+          <li><a href="#purpose">06 · How data is used</a></li>
+          <li><a href="#providers">07 · Third-party services</a></li>
+          <li><a href="#storage">08 · Local storage &amp; backups</a></li>
+          <li><a href="#security">09 · Security</a></li>
+          <li><a href="#retention">10 · Retention &amp; deletion</a></li>
+          <li><a href="#ads">11 · Advertising</a></li>
+          <li><a href="#children">12 · Children &amp; transfers</a></li>
+          <li><a href="#changes">13 · Updates &amp; contact</a></li>
+        </ul>
+      </nav>
+      <main class="content" id="main-content">
+        <section class="card" id="overview">
+          <h2><span class="num">01</span> About MeToYou</h2>
+          <p><strong>MeToYou (میتیو)</strong> is an Android app for initiating mobile credit transfers and other operator USSD actions in Afghanistan, and for recording transactions, customer balances, receipts and reports. It also provides optional premium features.</p>
+          <p>This Privacy Policy applies to the MeToYou app and its related authentication and subscription services. MeToYou is developed and operated by <strong>Mahdi Noori</strong>.</p>
+          <p>Our privacy contact is <a href="mailto:noorimahdi031@gmail.com">noorimahdi031@gmail.com</a>. We aim to keep the records you enter on your own device where possible.</p>
+          <div class="note"><strong>Important:</strong> Sending a USSD request involves your mobile network operator. The operator—not MeToYou—processes the network request and may apply operator charges and its own privacy terms.</div>
+        </section>
 
-  <section class="card toc">
-    <h2 style="margin-bottom:6px;">Contents</h2>
-    <ol>
-      <li><a href="#intro">Introduction</a></li>
-      <li><a href="#who">Who we are</a></li>
-      <li><a href="#data">Data we collect</a></li>
-      <li><a href="#summary">Data summary table</a></li>
-      <li><a href="#use">How we use your data</a></li>
-      <li><a href="#sharing">Sharing &amp; third-party services</a></li>
-      <li><a href="#local">Data stored on your device</a></li>
-      <li><a href="#ads">Advertising &amp; Advertising ID</a></li>
-      <li><a href="#security">Data security</a></li>
-      <li><a href="#retention">Data retention</a></li>
-      <li><a href="#rights">Your rights &amp; account deletion</a></li>
-      <li><a href="#children">Children's privacy</a></li>
-      <li><a href="#transfers">International transfers</a></li>
-      <li><a href="#changes">Changes to this policy</a></li>
-      <li><a href="#contact">Contact us</a></li>
-    </ol>
-  </section>
+        <section class="card" id="collect">
+          <h2><span class="num">02</span> Information you choose to provide</h2>
+          <h3>Account and authentication</h3>
+          <p>When you sign in using an email verification code (OTP), we process your email address. If you choose Google sign-in, we receive account details made available with your consent, such as your name and email address. You may also provide your name or business name as profile information.</p>
+          <h3>Premium activation and support</h3>
+          <p>We process your account's premium-plan status, plan name, activation and expiry information. If you choose the manual activation/contact flow, you can provide your name and telephone number in a message you decide to send through WhatsApp or Telegram. Those messages are handled by the messaging service you choose.</p>
+          <h3>Transactions and customer records</h3>
+          <p>Phone numbers used for credit transfers, customers' contact details you choose to save, transaction history, amounts, debts, receipts and reports are stored in the app on your device as described below. They are not automatically uploaded to our account server as part of ordinary local record-keeping.</p>
+        </section>
 
-  <section class="card" id="intro">
-    <h2><span class="num">1</span> Introduction</h2>
-    <p>This Privacy Policy explains how the <strong>MeToYou</strong> mobile application (the &ldquo;App&rdquo;, package name <code>noori.mahdi.metoyou</code>) collects, uses, shares, and protects your information. By installing or using the App, you agree to the practices described here.</p>
-    <p>We designed MeToYou to collect only the minimum information needed to provide its features. The App is an accounting and financial-management tool; most of the financial information you enter stays on your own device.</p>
-  </section>
+        <section class="card" id="technical">
+          <h2><span class="num">03</span> Device, usage and diagnostic information</h2>
+          <p>For authentication and device-bound premium access, our account server may receive a device identifier based on Android ID (or a locally generated identifier), device model, Android version, app version and your sign-in information.</p>
+          <p>When applicable, advertising, analytics or notification SDKs may process advertising identifiers, app interaction events, diagnostic information, and notification/device tokens. The precise information depends on the services enabled in your version and their SDK configurations.</p>
+          <p>Crash and diagnostic logs may be retained locally. If remote crash reporting is configured and enabled in a particular release, relevant diagnostic information may be transmitted to the configured service.</p>
+        </section>
 
-  <section class="card" id="who">
-    <h2><span class="num">2</span> Who we are</h2>
-    <p>The App is developed and operated by <strong>Mahdi Noori</strong> (the &ldquo;Developer&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;). For any privacy-related question or request, contact us at:</p>
-    <p style="font-size:16px;">📧 <strong><a href="mailto:mahdinoori.developer@gmail.com">mahdinoori.developer@gmail.com</a></strong></p>
-  </section>
+        <section class="card" id="permissions">
+          <h2><span class="num">04</span> Phone permissions and USSD requests</h2>
+          <p>MeToYou uses Android permissions in connection with the features you select:</p>
+          <ul>
+            <li><strong>Call phone:</strong> to initiate a supported USSD/calling action for credit transfers after you use the relevant app function.</li>
+            <li><strong>Phone state:</strong> to support telephony-dependent features and detect necessary phone/SIM state.</li>
+            <li><strong>Contacts:</strong> to help you select a saved contact or number when you use that function. We do not describe this as an automatic upload of your entire address book.</li>
+            <li><strong>Internet and network state:</strong> for authentication, subscription verification, ads and optional online services.</li>
+            <li><strong>Notifications:</strong> to display notifications when permitted by your Android settings.</li>
+          </ul>
+          <p>When you initiate a credit-transfer USSD action, the target phone number, transaction amount and the relevant operator code may be passed through Android's phone interface to your mobile network operator to process your request.</p>
+          <div class="note warning"><strong>Permission transparency:</strong> Android permissions can depend on the installed app version. The final Google Play Data safety declaration should be checked against the actual release build and included third-party SDKs—not inferred from this page alone.</div>
+        </section>
 
-  <section class="card" id="data">
-    <h2><span class="num">3</span> Data we collect</h2>
+        <section class="card" id="summary">
+          <h2><span class="num">05</span> Data processing overview</h2>
+          <p class="muted">This table is an explanatory summary of key data flows. It is not a substitute for the separate Google Play Data safety form.</p>
+          <div class="data-table" role="region" aria-label="Data processing table" tabindex="0">
+            <table>
+              <thead><tr><th scope="col">Data</th><th scope="col">Where it is used</th><th scope="col">Why</th></tr></thead>
+              <tbody>
+                <tr><td>Email, profile name</td><td>Account server; Google sign-in if selected</td><td>Sign-in and profile management</td></tr>
+                <tr><td>Device ID, model, OS/app version</td><td>Account server</td><td>Device binding, abuse prevention, support</td></tr>
+                <tr><td>Premium status and expiry</td><td>Account server; local app cache</td><td>Feature access and subscription verification</td></tr>
+                <tr><td>Phone number for manual support</td><td>Chosen messaging service and our support channel</td><td>Optional activation or support</td></tr>
+                <tr><td>USSD target number, amount, code</td><td>Android telephony interface / mobile operator</td><td>Requested credit transfer or operator action</td></tr>
+                <tr><td>Customers, balances, local transactions</td><td>Your device and backups you choose to export</td><td>Record-keeping, receipts and reports</td></tr>
+                <tr><td>Ad ID, app activity and push token</td><td>Applicable third-party SDKs</td><td>Ads, analytics and notifications</td></tr>
+                <tr><td>Crash logs and technical diagnostics</td><td>Device and applicable diagnostic services</td><td>Troubleshooting, performance and stability</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
 
-    <h3>3.1 Account &amp; sign-in information</h3>
-    <p>To create your account and sign you in, we collect:</p>
-    <ul>
-      <li><strong>Email address</strong> &mdash; entered by you for the email verification-code (OTP) login, or provided by Google when you choose <em>Sign in with Google</em>.</li>
-      <li><strong>Name</strong> &mdash; your name and (optionally) a business name associated with your account. When you sign in with Google, your Google profile name may be used.</li>
-    </ul>
+        <section class="card" id="purpose">
+          <h2><span class="num">06</span> How we use information</h2>
+          <ul>
+            <li>To create accounts, verify sign-ins, and keep your account secure.</li>
+            <li>To enable the USSD actions and local accounting functions you request.</li>
+            <li>To validate premium access and provide related support.</li>
+            <li>To display ads in the free experience and understand app performance where enabled.</li>
+            <li>To deliver notifications and diagnose errors where applicable.</li>
+            <li>To comply with legitimate legal requirements and address misuse or disputes.</li>
+          </ul>
+          <p>We do not sell your personal account information. Information may be processed by service providers as explained in the next section.</p>
+        </section>
 
-    <h3>3.2 Device information</h3>
-    <p>When you sign in, the App sends the following to our authentication server so we can secure your session and bind it to your device:</p>
-    <ul>
-      <li><strong>Device identifier</strong> &mdash; a stable per-install identifier derived from the Android <code>ANDROID_ID</code> (or a randomly generated value as a fallback).</li>
-      <li><strong>Device model</strong> (manufacturer and model name).</li>
-      <li><strong>Operating-system version</strong> (Android version and SDK level).</li>
-      <li><strong>App version</strong>.</li>
-    </ul>
+        <section class="card" id="providers">
+          <h2><span class="num">07</span> Third parties and sharing</h2>
+          <p>Depending on the options you use and services included in your installed build, MeToYou may interact with:</p>
+          <ul>
+            <li><strong>Google Sign-In:</strong> optional sign-in and sharing of selected Google account details after consent. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google privacy policy</a>.</li>
+            <li><strong>Google AdMob:</strong> in-app advertising and ad measurement. <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google uses information</a>.</li>
+            <li><strong>Firebase Analytics:</strong> app usage analytics. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase privacy information</a>.</li>
+            <li><strong>OneSignal:</strong> push notification delivery and associated device/notification data. <a href="https://onesignal.com/privacy_policy" target="_blank" rel="noopener noreferrer">OneSignal privacy policy</a>.</li>
+            <li><strong>WhatsApp and Telegram:</strong> only if you choose to contact us or send a manual activation message through one of those apps. <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">WhatsApp policy</a>; <a href="https://telegram.org/privacy" target="_blank" rel="noopener noreferrer">Telegram policy</a>.</li>
+            <li><strong>Mobile network operators:</strong> network and USSD processing for transactions you initiate, under the operator's terms and practices.</li>
+            <li><strong>MeToYou's account and subscription server:</strong> authentication, associated device details and premium entitlements.</li>
+          </ul>
+          <p>We may disclose limited information when required by applicable law or to respond to valid legal requests. Your use of external services is also subject to their own policies.</p>
+        </section>
 
-    <h3>3.3 Subscription &amp; purchase status</h3>
-    <p>If you activate a premium subscription, we store and process your <strong>subscription status, plan name, and expiry date</strong> so the App can unlock premium features and verify your access.</p>
+        <section class="card" id="storage">
+          <h2><span class="num">08</span> Data stored on your phone and backups</h2>
+          <p>Transaction records, customer information, debts, local balances and reports are kept in the app's local storage. This information is not part of the regular authentication or subscription data sent to our server.</p>
+          <p>When you choose to create or share a backup, the file is saved or transmitted to the location or app you select. Keep exported backups secure and remove unwanted copies yourself. Uninstalling the app usually removes its local app data, but it does not remove files that you exported to other locations.</p>
+          <p>The account session and premium state may also be cached locally for app functionality.</p>
+        </section>
 
-    <h3>3.4 Analytics, diagnostics &amp; push notifications</h3>
-    <p>Through the third-party services listed in section&nbsp;6, we and our providers automatically collect:</p>
-    <ul>
-      <li><strong>Usage &amp; interaction data</strong> (e.g., screens opened, events, approximate session activity).</li>
-      <li><strong>Diagnostic &amp; crash data</strong> (e.g., crash logs and performance information).</li>
-      <li><strong>Identifiers</strong> such as the <strong>Advertising ID</strong> and push-notification tokens.</li>
-    </ul>
+        <section class="card" id="security">
+          <h2><span class="num">09</span> Security practices</h2>
+          <p>Our configured production authentication and subscription API uses HTTPS. The app attempts to protect locally stored session credentials with Android encrypted storage, with an app-private preferences fallback on devices where encrypted storage cannot be initialized. Optional device or biometric locking can help protect app access.</p>
+          <p>We work to reduce unnecessary data transfers, but no system is completely secure. You should protect your device, verify recipients before transferring credit, and safeguard exported backups.</p>
+        </section>
 
-    <h3>3.5 Phone number (premium activation)</h3>
-    <p>When you choose to activate a premium subscription <strong>manually</strong>, the App asks you to enter your <strong>phone number</strong> together with your name and prepares a message that you then choose to send to us through <strong>Telegram</strong> or <strong>WhatsApp</strong> so we can confirm and activate your subscription. Your phone number leaves your device <strong>only when you initiate this contact</strong>, and we use it solely to identify your account and provide premium support. If you do not use the manual activation flow, the App does not transmit your phone number.</p>
+        <section class="card" id="retention">
+          <h2><span class="num">10</span> Retention, your rights and account deletion</h2>
+          <p>Account profile, session/device association and premium status information are retained while needed to operate your account, or for legitimate security, support, legal or dispute-handling reasons.</p>
+          <p>You can request deletion of your MeToYou account and server-side personal data by emailing us from the address connected with your account. We will verify ownership and aim to process verified requests within <strong>30 days</strong>. We may need to retain limited information where legally required; we will explain that when applicable.</p>
+          <p><a class="cta" href="delete-account.html">How to delete your account &rarr;</a></p>
+          <p style="margin-top:16px">You can also delete app data stored on your own phone. Removing server-side account data does not automatically erase exported backup files or messages that you independently sent through third-party messaging services.</p>
+        </section>
 
-    <h3>3.6 Financial records you enter</h3>
-    <p>Transactions, balances, customers (including any contact details such as customer phone numbers you choose to save), products, and other accounting data you enter are treated as your content. As described in section&nbsp;7, this content is stored <strong>locally on your device</strong> and is not transmitted to our servers.</p>
-  </section>
+        <section class="card" id="ads">
+          <h2><span class="num">11</span> Advertising and device controls</h2>
+          <p>The free app may display ads served by Google AdMob. Where available, your device's ad settings and Google privacy controls allow you to manage the advertising identifier and ad personalization. Some ads or measurements may still be delivered without personalized targeting.</p>
+          <p>Learn more about how Google uses data through <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Google's partner sites notice</a>.</p>
+        </section>
 
-  <section class="card" id="summary">
-    <h2><span class="num">4</span> Data summary table</h2>
-    <p class="muted">This table mirrors the categories used in the Google Play Data Safety section.</p>
-    <div class="table-scroll">
-      <table>
-        <thead>
-          <tr><th>Data type</th><th>Collected</th><th>Shared</th><th>Primary purpose</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Email address</td><td><span class="pill yes">Yes</span></td><td><span class="pill no">No</span></td><td>Account creation, sign-in</td></tr>
-          <tr><td>Name</td><td><span class="pill yes">Yes</span></td><td><span class="pill no">No</span></td><td>Account management, app functionality</td></tr>
-          <tr><td>Phone number</td><td><span class="pill yes">Yes</span></td><td><span class="pill no">No</span></td><td>Premium activation &amp; support (manual, user-initiated)</td></tr>
-          <tr><td>Device or other IDs (incl. Advertising ID)</td><td><span class="pill yes">Yes</span></td><td><span class="pill yes">Yes</span></td><td>App functionality, analytics, advertising</td></tr>
-          <tr><td>App activity / interactions</td><td><span class="pill yes">Yes</span></td><td><span class="pill yes">Yes</span></td><td>Analytics, advertising</td></tr>
-          <tr><td>Crash logs &amp; diagnostics</td><td><span class="pill yes">Yes</span></td><td><span class="pill no">No</span></td><td>Stability &amp; performance</td></tr>
-          <tr><td>Purchase / subscription status</td><td><span class="pill yes">Yes</span></td><td><span class="pill no">No</span></td><td>App functionality (premium access)</td></tr>
-          <tr><td>Financial records you enter</td><td><span class="pill no">Stored on device</span></td><td><span class="pill no">No</span></td><td>Core accounting features</td></tr>
-        </tbody>
-      </table>
+        <section class="card" id="children">
+          <h2><span class="num">12</span> Children's privacy and international processing</h2>
+          <p>MeToYou is not intended for children under 13 (or the minimum applicable age in their country), and we do not knowingly seek personal information from children. If you believe that a child has provided account data, contact us to request its removal.</p>
+          <p>Some service providers may process information in countries outside Afghanistan. Such processing is governed by applicable law and each provider's privacy practices.</p>
+        </section>
+
+        <section class="card" id="changes">
+          <h2><span class="num">13</span> Changes and contact</h2>
+          <p>We may revise this policy when the app, third-party integrations or legal requirements change. The date at the top identifies the latest revision. Material changes may also be announced through the app or website where practical.</p>
+          <p>For privacy questions, requests to review your account data, or account deletion, contact <strong><a href="mailto:noorimahdi031@gmail.com">noorimahdi031@gmail.com</a></strong>.</p>
+        </section>
+
+        <section class="card locale-summary" lang="fa-AF" id="dari">
+          <h2><span class="num">FA</span> خلاصه به دری</h2>
+          <p>میتیو برای ارسال کریدیت و اجرای کدهای USSD از امکانات تماس گوشی استفاده می‌کند. درخواست ارسال کریدیت از طریق شبکه مخابراتی شما اجرا می‌شود. معلومات معاملات، مشتریان و قرض‌ها معمولاً در حافظه خود گوشی ذخیره می‌شوند؛ اما معلومات حساب، دستگاه و وضعیت اشتراک برای ورود و فعال‌سازی امکانات پریمیوم توسط سرور بررسی می‌شود.</p>
+          <p>برنامه ممکن است برای تبلیغات، آمار استفاده و اطلاع‌رسانی از خدمات Google و OneSignal استفاده کند. برای درخواست حذف حساب و معلومات شخصی مرتبط با آن، صفحه <a href="delete-account.html">حذف حساب</a> را باز کنید یا به <a href="mailto:noorimahdi031@gmail.com">noorimahdi031@gmail.com</a> ایمیل بفرستید.</p>
+        </section>
+      </main>
     </div>
-    <div class="note">All data transmitted between the App and our servers is <strong>encrypted in transit</strong> using HTTPS/TLS.</div>
-  </section>
-
-  <section class="card" id="use">
-    <h2><span class="num">5</span> How we use your data</h2>
-    <ul>
-      <li>To <strong>create and authenticate your account</strong> and keep you signed in securely.</li>
-      <li>To <strong>provide and operate the App's features</strong>, including premium features tied to your subscription.</li>
-      <li>To <strong>activate and support premium subscriptions</strong>, including manual activation where you contact us with your name and phone number.</li>
-      <li>To <strong>secure your account</strong>, bind your session to your device, and help prevent fraud and unauthorized access.</li>
-      <li>To <strong>understand and improve</strong> the App through aggregated analytics and crash diagnostics.</li>
-      <li>To <strong>send notifications</strong> related to the App where applicable.</li>
-      <li>To <strong>show advertising</strong> that helps keep the App free (see section&nbsp;8).</li>
-    </ul>
-    <div class="note">We do <strong>not</strong> sell your personal information.</div>
-  </section>
-
-  <section class="card" id="sharing">
-    <h2><span class="num">6</span> Sharing &amp; third-party services</h2>
-    <p>We share data only with the service providers that make the App work. Each operates under its own privacy policy:</p>
-    <ul>
-      <li><strong>Google Sign-In (Google LLC)</strong> &mdash; authentication. When you tap &ldquo;Sign in with Google&rdquo;, Google shares your name, email address, and profile picture with the App after your consent. &nbsp;<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Policy</a></li>
-      <li><strong>Google AdMob (Google LLC)</strong> &mdash; in-app advertising. Collects the Advertising ID and interaction data to serve and measure ads. &nbsp;<a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Ad policy</a> · <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses data</a></li>
-      <li><strong>Firebase Analytics (Google LLC)</strong> &mdash; usage analytics and diagnostics. &nbsp;<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Policy</a></li>
-      <li><strong>OneSignal</strong> &mdash; push-notification delivery; processes a notification token and basic device information. &nbsp;<a href="https://onesignal.com/privacy_policy" target="_blank" rel="noopener">Policy</a></li>
-      <li><strong>Telegram / WhatsApp (third-party messaging apps)</strong> &mdash; when you choose to activate premium <em>manually</em>, the App opens Telegram or WhatsApp so you can send us a message that includes your name and phone number. These apps transmit and process your message under their own privacy policies. &nbsp;<a href="https://telegram.org/privacy" target="_blank" rel="noopener">Telegram</a> · <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener">WhatsApp</a></li>
-      <li><strong>Our authentication &amp; subscription server</strong> &mdash; operated for the App to manage logins and premium access; receives the data described in sections 3.1&ndash;3.3.</li>
-    </ul>
-    <p>We may also disclose information if required by law, regulation, legal process, or to protect the rights, safety, or property of users or the public.</p>
-  </section>
-
-  <section class="card" id="local">
-    <h2><span class="num">7</span> Data stored on your device</h2>
-    <p>The financial and accounting records you create in the App are stored <strong>locally on your device</strong>. The authentication token that keeps you signed in is stored locally using Android's encrypted storage.</p>
-    <p>If you use the App's <strong>backup feature</strong>, a backup file is created only when you choose to do so and is saved to the location you select (for example, your device storage). You are responsible for the security of any backup files you export or share.</p>
-    <p>Uninstalling the App removes locally stored data; backup files you have exported are not removed automatically.</p>
-  </section>
-
-  <section class="card" id="ads">
-    <h2><span class="num">8</span> Advertising &amp; Advertising ID</h2>
-    <p>The App may display ads through Google AdMob. AdMob uses the device <strong>Advertising ID</strong> and interaction data to serve and measure advertising. You can control this:</p>
-    <ul>
-      <li>On your device, open <em>Settings → Google → Ads</em> to reset your Advertising ID or opt out of ad personalization.</li>
-      <li>Learn more about how Google uses data from apps that use its services at <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a>.</li>
-    </ul>
-  </section>
-
-  <section class="card" id="security">
-    <h2><span class="num">9</span> Data security</h2>
-    <ul>
-      <li>All communication between the App and our servers uses <strong>HTTPS/TLS encryption</strong>.</li>
-      <li>Your local authentication token is stored using <strong>encrypted storage</strong> on the device.</li>
-      <li>Optional <strong>biometric / device lock</strong> can be enabled to protect access to the App.</li>
-    </ul>
-    <p>No method of transmission or storage is 100% secure, but we take reasonable measures to protect your information.</p>
-  </section>
-
-  <section class="card" id="retention">
-    <h2><span class="num">10</span> Data retention</h2>
-    <p>We keep account data (such as your email, name, device identifier, and subscription status) for as long as your account remains active or as needed to provide the App. When you request deletion (section&nbsp;11), we delete or anonymize your account data, except where we must retain certain records to comply with legal obligations or resolve disputes.</p>
-  </section>
-
-  <section class="card" id="rights">
-    <h2><span class="num">11</span> Your rights &amp; account deletion</h2>
-    <p>Depending on where you live, you may have the right to access, correct, export, or delete your personal data, and to object to or restrict certain processing.</p>
-    <h3>How to delete your account and data</h3>
-    <p>To request deletion of your account and the personal data associated with it (including your email, name, phone number, device identifier, and subscription status), email us at <strong><a href="mailto:mahdinoori.developer@gmail.com">mahdinoori.developer@gmail.com</a></strong> with the subject &ldquo;Account Deletion&rdquo; from the email address you used to sign in. We will process your request within 30 days.</p>
-    <p>You can also remove locally stored data at any time by uninstalling the App from your device.</p>
-  </section>
-
-  <section class="card" id="children">
-    <h2><span class="num">12</span> Children's privacy</h2>
-    <p>The App is not directed to children under the age of 13 (or the minimum age required in your country), and we do not knowingly collect personal data from them. If you believe a child has provided us with personal data, please contact us so we can delete it.</p>
-  </section>
-
-  <section class="card" id="transfers">
-    <h2><span class="num">13</span> International data transfers</h2>
-    <p>Our service providers (such as Google) may process data on servers located in other countries. Where data is transferred internationally, it remains protected by appropriate safeguards and the providers' own compliance programs.</p>
-  </section>
-
-  <section class="card" id="changes">
-    <h2><span class="num">14</span> Changes to this policy</h2>
-    <p>We may update this Privacy Policy from time to time. When we do, we will revise the &ldquo;Last updated&rdquo; date at the top of this page. Significant changes may also be communicated within the App. Your continued use of the App after an update means you accept the revised policy.</p>
-  </section>
-
-  <section class="card" id="contact">
-    <h2><span class="num">15</span> Contact us</h2>
-    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, contact:</p>
-    <p style="font-size:16px;"><strong>Mahdi Noori</strong><br>
-    📧 <strong><a href="mailto:mahdinoori.developer@gmail.com">mahdinoori.developer@gmail.com</a></strong></p>
-  </section>
-
-  <footer>
-    &copy; 2026 Mahdi Noori · MeToYou. All rights reserved.
-  </footer>
-
-</div>
+    <footer><span>&copy; 2026 Mahdi Noori · MeToYou</span><span><a href="index.html">Home</a> · <a href="delete-account.html">Account deletion</a> · <a href="mailto:noorimahdi031@gmail.com">Contact</a></span></footer>
+  </div>
 </body>
 </html>
